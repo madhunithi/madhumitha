@@ -1,0 +1,14 @@
+public class CV {
+   public static void main(String[] args) {
+      
+      char ch[] = {'M','a','d','h','u'};
+      System.out.print("The char array elements are: ");
+      for(int i = 0; i<ch.length; i++) {
+         System.out.print(ch[i] +  " ");
+      }
+      
+      String str = String.copyValueOf(ch);
+      
+      System.out.println("\nThe string represents the characters of the char array is: " + str);
+   }
+}
