@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter an integer: ");
+        int no = sc.nextInt(); 
+
+        String strNo = String.valueOf(no);
+
+        System.out.println("Integer value: " + no);
+        System.out.println("String value: " + strNo);
+
+        String copiedValue = String.valueOf(strNo);
+        System.out.println("Copied value: " + copiedValue);
+
+        sc.close();
+    }
+}
