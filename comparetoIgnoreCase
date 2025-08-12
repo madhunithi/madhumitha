@@ -1,0 +1,11 @@
+public class Compare {
+   public static void main(String[] args) {
+      
+      String str1 = new String("Hello");
+      String str2 = new String("Madhu");
+      System.out.println("The given string values are: " + str1 + " and " + str2);
+      
+      int compare = str1.compareToIgnoreCase(str2);
+      System.out.println("The given strings are equal. " + compare);
+   }
+}
