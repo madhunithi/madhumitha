@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String text = sc.nextLine();
+
+        System.out.print("Enter index to get codePoint: ");
+        int index = sc.nextInt();
+        System.out.println("codePoint at index " + index + ": " + text.codePointAt(index));
+
+        System.out.print("Enter index to get codePointBefore: ");
+        int beforeIndex = sc.nextInt();
+        System.out.println("codePointBefore at index " + beforeIndex + ": " + text.codePointBefore(beforeIndex));
+
+        sc.close();
+    }
+}
