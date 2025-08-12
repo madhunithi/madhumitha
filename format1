@@ -1,0 +1,9 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        String name1 = "hello I'm %s"; 
+        String result = String.format(name1, "maddy");
+        System.out.println(result); 
+    }
+}
