@@ -1,0 +1,59 @@
+#replace
+public class Main {
+    public static void main(String[] args) {
+        String text = "madhunithi";
+        String result = text.replace('a', 'a');
+        System.out.println(result); 
+    }
+}
+
+#startwith
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+       String myStr = "Madhumitha";
+System.out.println(myStr.startsWith("Madhu"));   
+System.out.println(myStr.startsWith("mitha"));  
+    }
+}
+
+#codepoints-foreach
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        String a = "Madhu";
+
+        a.codePoints().forEach(cp -> System.out.print((char) cp));
+  
+        System.out.print(" Mitha");
+    }
+}
+
+#subsequence
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+       String myStr = "Madhu Mitha!";
+       System.out.println(myStr.subSequence(5, 10));
+    }
+}
+
+#tocharArray
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+       String myStr = "Madhu Mitha!";
+       
+          char[] myArray = myStr.toCharArray();
+          System.out.println(myArray[7]);
+    }
+}
+
+
+
+
+
