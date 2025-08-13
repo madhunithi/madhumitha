@@ -1,0 +1,7 @@
+public class Main {
+    public static void main(String[] args) {
+        String name = "Madhumitha";
+        System.out.println(name.matches("Madhumitha")); 
+        System.out.println(name.matches(".*mitha"));   
+    }
+}
