@@ -1,0 +1,91 @@
+#Searching arrays
+import java.util.*;
+public class solution
+{
+  public static void main(String[] arg){
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int arr[] = new int[n];
+    for(int i=0; i<n; i++){
+      arr[i] = sc.nextInt();
+    }
+    
+    int search = sc.nextInt();
+    Boolean indicate = false;
+    
+    for(int i=0; i<n; i++){
+    if(arr[i] == search){
+      indicate = true;
+      System.out.println(i+1 +" position");
+      break;
+       }
+    }
+    if (indicate==false);
+    System.out.println("no present data");
+  }
+}
+
+#binary search
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for (int i=0; i<n; i++){
+          arr[i]= sc.nextInt();
+       }
+       Arrays.sort(arr);
+       int search = sc.nextInt();
+       int start=0,end=n-1;
+       boolean f = false;
+       while(start<=end){
+         int mid = (start+end)/2;
+         if(arr[mid]==search){
+           System.out.println(mid + " present");
+           f = true;
+           break;
+         }
+         else if(search>arr[mid]){
+           start = mid + 1;
+         }
+         else{
+          end = mid-1;
+         }
+       }
+      if(f==false){
+        System.out.println("no data");
+      }    
+    }
+}
+
+#
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        for (int i = 0; i < n - 1; i++) {
+          for (int j = 0; j < n - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+              int temp = arr[j];
+              arr[j] = arr[j + 1];
+              arr[j + 1] = temp;
+            }
+          }
+      }
+
+        System.out.println(Arrays.toString(arr));
+    }
+}
+
+#
+        
+
+
+
