@@ -1,0 +1,106 @@
+#linked list in  java
+class Node{
+    int data;
+    Node next;
+}
+public class Main
+{
+    public static void main (String[] args) {
+        Node n1 = new Node();
+        n1.data = 10;
+        Node n2 = new Node();
+        n2.data = 20;
+        n1.next = n2;
+        Node n3 = new Node();
+        n3.data = 30;
+        n2.next = n3;
+        System.out.println(n1.data+" "+n2.data+" "+n3.data);
+        System.out.println(n1.data+" "+n1.next.data+" "+n1.next.next.data);
+        
+    }
+    
+}
+
+#singlylinkedlist
+  class Node {
+    int data;
+    Node next;
+
+    Node(int d) {
+        data = d;
+        next = null;
+    }
+}
+
+class SinglyLinkedList {
+    Node head = null;
+    Node tail = null;
+
+    void add(int data) {
+        Node newnode = new Node(data);
+
+        if (head == null) {
+            head = tail = newnode;
+        } else {
+            newnode.next = head;
+            head=newnode;
+        }
+    }
+
+    void display() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        SinglyLinkedList s = new SinglyLinkedList();
+
+        s.add(100);
+        s.display();
+
+        s.add(200);
+        s.display();
+
+        s.add(300);
+        s.display();
+    }
+}
+
+#deletion
+  void deletesatlast() {
+     if(head==nul){
+       System.out.println("No element to delete");
+         return;
+     }
+  Node temp=head;
+  while(temp.next!=tail) {
+    temp=temp.next;
+  }
+  tail=temp;
+  tail.next=null;
+}
+
+links
+https://onlinegdb.com/kASk-Htlm
+https://www.onlinegdb.com/fork/vZGIerlOL
+https://www.onlinegdb.com/9gnIMNA0I
+https://www.onlinegdb.com/fork/CLuwbVthk#
+
+#
+  void deleteatbeg(){
+      if(head==null){
+        System.out.println("No element to delete");
+          return;
+      }
+
+
+
+
+
+  
